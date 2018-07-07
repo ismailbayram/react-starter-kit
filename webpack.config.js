@@ -5,10 +5,6 @@ const htmlPlugin = new HtmlWebPackPlugin({
 });
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractLESS = new ExtractTextPlugin("style.css");
-// const CopyWebpackPlugin = require('copy-webpack-plugin')
-// const statifFiles = new CopyWebpackPlugin([
-//   { from: 'src/assets/img', to: 'img' }
-// ]);
 
 module.exports = {
   entry: "./src/index.js",
