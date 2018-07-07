@@ -1,4 +1,4 @@
-
+import "./assets/less/main.less";
 import React from "react";
 import ReactDOM from "react-dom";
 
