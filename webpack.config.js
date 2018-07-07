@@ -22,11 +22,6 @@ module.exports = {
         }
       },
       {
-        enforce: "pre",
-        test: /\.js$/,
-        loader: "source-map-loader"
-      },
-      {
         test: /\.less$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
@@ -52,5 +47,6 @@ module.exports = {
       }
     ]
   },
+  devtool: 'source-map',
   plugins: [htmlPlugin, extractLESS]
 };
