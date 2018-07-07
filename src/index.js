@@ -1,9 +1,13 @@
 import "./assets/less/main.less";
 import React from "react";
-import ReactDOM from "react-dom";
+import { render } from "react-dom";
+import { HashRouter } from "react-router-dom";
 
-const Index = () => {
-  return <div>Hello React!</div>;
-};
+import App from "../src/components/App";
 
-ReactDOM.render(<Index />, document.getElementById("app"));
+render(
+  <HashRouter>
+    <App />
+  </HashRouter>,
+  document.getElementById("app")
+);
